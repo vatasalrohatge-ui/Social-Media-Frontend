@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e34cff"/>
+      <stop offset=".48" stop-color="#9b20ff"/>
+      <stop offset="1" stop-color="#5100e8"/>
+    </linearGradient>
+    <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#d9d5e7"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="#000"/>
+  <g stroke="#08050d" stroke-width="18" stroke-linejoin="round" stroke-linecap="round">
+    <!-- camera flash marks -->
+    <g filter="url(#glow)">
+      <path d="M696 302 L719 203 Q725 173 754 180 Q783 187 777 216 L751 315 Q744 343 716 336 Q688 329 696 302Z" fill="url(#purple)"/>
+      <path d="M784 337 L858 254 Q880 231 902 252 Q924 274 902 297 L826 380 Q804 402 783 380 Q762 359 784 337Z" fill="url(#purple)"/>
+    </g>
+
+    <!-- camera top and body -->
+    <path d="M282 395 Q282 354 324 354 H386 Q428 354 428 395 V424 H282Z" fill="url(#white)"/>
+    <path d="M205 425 Q205 376 254 376 H378 L427 322 Q449 298 485 298 H626 Q665 298 690 326 L736 376 H790 Q851 376 851 437 V673 H205Z" fill="url(#white)"/>
+    <path d="M273 451 Q273 416 309 416 H399 L452 359 H646 L698 416 H746 Q783 416 783 453 V673 H273Z" fill="#050507" stroke="none"/>
+
+    <!-- lens ring -->
+    <circle cx="528" cy="550" r="178" fill="url(#white)" stroke="#08050d" stroke-width="20"/>
+    <circle cx="528" cy="550" r="143" fill="#050507" stroke="#17131e" stroke-width="16"/>
+    <path d="M491 482 Q491 459 514 472 L615 531 Q640 546 615 562 L514 622 Q491 635 491 610Z" fill="url(#purple)" stroke="none"/>
+
+    <!-- open book upper white pages -->
+    <path d="M178 644 Q305 616 410 669 Q476 701 528 769 Q579 700 646 669 Q750 618 879 644 L884 742 Q755 714 651 758 Q581 788 528 850 Q475 788 405 758 Q301 714 173 742Z" fill="url(#white)"/>
+    <!-- purple lower pages -->
+    <path d="M172 716 Q302 687 407 733 Q478 765 528 829 Q579 765 650 733 Q755 687 884 716 L913 832 Q771 798 657 844 Q582 874 528 925 Q474 874 399 844 Q285 798 143 832Z" fill="url(#purple)"/>
+    <!-- page accent lines -->
+    <path d="M174 785 Q309 755 417 805 Q476 832 528 886 Q580 832 639 805 Q747 755 882 785" fill="none" stroke="#3e00bb" stroke-width="18"/>
+    <path d="M208 738 Q326 716 420 758 Q480 785 528 837 Q576 785 636 758 Q730 716 848 738" fill="none" stroke="#fff" stroke-width="9" opacity=".9"/>
+    <path d="M145 832 Q286 798 399 844 Q474 874 528 925 Q582 874 657 844 Q771 798 913 832" fill="none" stroke="#09050e" stroke-width="18"/>
+  </g>
+</svg>
