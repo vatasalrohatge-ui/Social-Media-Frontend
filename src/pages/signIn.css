@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: #e1e1e1;
+    font-family: 'Google Sans', sans-serif;
+}
+.sign-in-container{
+   background-color: #f0ffff;
+   padding: 35px;
+   margin: 50px 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    gap: 30px;
+}
+#login{
+    height: 32px;
+    width: 70px;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 13px;
+    border: 1px solid #000000;
+    background-color: #b3f8f8;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+#password{
+    height: 32px;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 13px;
+    border: 1px solid #000000;
+    background-color: #b3f8f8;
+}
+#username{
+    height: 32px;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 13px;
+    border: 1px solid #000000;
+    background-color: #b3f8f8;
+}
+#sign-in-btn{
+    height: 32px;
+    width: 70px;
+    font-family: 'Google Sans', sans-serif;
+    font-size: 13px;
+    border: 1px solid #000000;
+    background-color: #b3f8f8;
+}
